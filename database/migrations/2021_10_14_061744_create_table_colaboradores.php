@@ -18,6 +18,7 @@ class CreateTableColaboradores extends Migration
             $table->string('nome', '255')->nullable();
             $table->string('email', '45')->nullable();
             $table->dateTime('data_nascimento')->nullable();
+            $table->text('telefone')->nullable();
             $table->bigInteger('empresa_id');
             $table->timestamps();
         });

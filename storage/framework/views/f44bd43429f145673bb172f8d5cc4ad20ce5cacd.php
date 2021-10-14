@@ -19,7 +19,7 @@
 
     if (count($colaboradores) == 0) {
 
-        echo "<tr><td colspan='6' class='text-center'>Nenhuma Colaborador Cadastrado</td></tr>";
+        echo "<tr><td colspan='6' class='text-center'>Nenhum Colaborador Cadastrado</td></tr>";
     }
 
     foreach ($colaboradores as $colaborador) {

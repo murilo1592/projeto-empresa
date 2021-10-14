@@ -33,7 +33,7 @@
 </div>
 
 <script src="{{asset('js/app.js')}}"></script>
-{{--<script src="{{url(mix('js/scripts.js'))}}"></script>--}}
+<script src="{{url(mix('site/js/script.js'))}}"></script>
 
 </body>
 </html>

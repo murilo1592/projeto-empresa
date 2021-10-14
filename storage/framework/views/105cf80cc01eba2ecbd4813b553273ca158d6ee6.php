@@ -3,7 +3,7 @@
     <h2>Formulário de Cadastro :: Colaborador</h2>
     <hr>
 
-    <form action="<?php echo e(url('/colaborador/novo', ['id' => $empresa_id])); ?>" method="POST" autocomplete="off">
+    <form id='form-colaborador' action="<?php echo e(url('/colaborador/novo', ['id' => $empresa_id])); ?>" method="POST" autocomplete="off">
 
         <?= csrf_field(); ?>
 
@@ -22,6 +22,12 @@
             </div>
 
             <div class="form-group col-md-12">
+                <label>Telefone <a href="" id="link-whatsApp-colaborador" target="_blank">WhatsApp</a> </label>
+                <input type="text" name="telefone" id="input-telefone-colaborador" placeholder="Digite o telefone"
+                       class="form-control require"/>
+            </div>
+
+            <div class="form-group col-md-12">
                 <label>Data de Nascimento</label>
                 <input type="text" name="data_nascimento" id="data_nascimento" placeholder="Digite a Data de Nascimento"
                        class="form-control require"/>
@@ -31,8 +37,6 @@
         <button type="submit" class="btn btn-primary">Enviar</button>
 
     </form>
-
-    <script src="<?php echo e(url(mix('site/js/script.js'))); ?>"></script>
 
 <?php $__env->stopSection(); ?>
 

@@ -11,7 +11,7 @@
 
         <div class="row">
 
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
                 <label>Razão Social &raquo; <b><i>Obs: Apenas números</i></b></label>
                 <input type="text" name="razao_social" id="razao_social" placeholder="Digite a Razão Social"
                        class="form-control require"/>
@@ -24,8 +24,14 @@
             </div>
 
             <div class="form-group col-md-6">
-                <label>Telefone</label>
-                <input type="text" name="telefone" id="telefone" placeholder="Digite o telefone de sua empresa"
+                <label>Telefone <a href="" id="link-whatsApp-empresa" target="_blank">WhatsApp</a> </label>
+                <input type="text" name="telefone" id="input-telefone-empresa" placeholder="Digite o telefone"
+                       class="form-control require"/>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>CEP</label>
+                <input type="text" id="cep-buscar" placeholder="Digite o CEP"
                        class="form-control require"/>
             </div>
 

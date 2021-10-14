@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8478f2b1-e682-4f41-8752-0743e164712e" name="Default Changelist" comment="" />
+    <list default="true" id="8478f2b1-e682-4f41-8752-0743e164712e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_13_204701_create_table_colaboradores.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/colaboradores/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colaboradores/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/colaboradores/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colaboradores/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/empresas/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/empresas/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/empresas/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ujPZ8Aabs7xgBeFCKQpLdnJlmpx3on0cfx2adUS2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/105cf80cc01eba2ecbd4813b553273ca158d6ee6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/105cf80cc01eba2ecbd4813b553273ca158d6ee6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/aa5986f31f206b97b8191fa1403517be6b106a17.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/aa5986f31f206b97b8191fa1403517be6b106a17.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f44bd43429f145673bb172f8d5cc4ad20ce5cacd.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f44bd43429f145673bb172f8d5cc4ad20ce5cacd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fa3fa39033cb8eb8d7e8f1218bb443ba707b5b55.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/fa3fa39033cb8eb8d7e8f1218bb443ba707b5b55.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -138,7 +153,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634168075630</updated>
-      <workItem from="1634168078106" duration="14755000" />
+      <workItem from="1634168078106" duration="15103000" />
+      <workItem from="1634202693277" duration="3885000" />
     </task>
     <servers />
   </component>
@@ -155,5 +171,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
