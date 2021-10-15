@@ -28,12 +28,15 @@
         $linkEdit = url("/empresa/show/{$empresa->id}");
         $linkCreateColab = url("/colaborador/novo/{$empresa->id}");
 
+        $endereco = mb_strimwidth($empresa->endereco, 0, 15, "...");
+        $razaoSocial = mb_strimwidth($empresa->razao_social, 0, 15, "...");
+
         echo "<tr>
-                        <td>{$empresa->razao_social}</td>
+                        <td>{$razaoSocial}</td>
                         <td>{$empresa->cnpj}</td>
                         <td>{$empresa->telefone}</td>
                         <td>{$empresa->email}</td>
-                        <td>{$empresa->endereco}</td>
+                        <td>{$endereco}</td>
                         <td>
                             <a class='btn btn-sm btn-primary' href={$linkEdit}>Editar/Abrir Empresa</a>
                             <a class='btn btn-sm btn-success' href={$linkCreateColab}>Cadastrar Colaborador</a>

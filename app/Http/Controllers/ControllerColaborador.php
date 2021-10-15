@@ -11,8 +11,6 @@ class ControllerColaborador extends Controller
 {
     public function index()
     {
-        $colaboradores = Colaborador::all();
-
         $sql = "SELECT cb.*, ep.razao_social empresa FROM colaboradores cb
                 INNER JOIN empresas ep ON cb.empresa_id = ep.id";
 
@@ -35,10 +33,13 @@ class ControllerColaborador extends Controller
 
     public function create(Request $request, $id)
     {
+//        date_default_timezone_set('America/Bahia_Banderas');
+
         $colaborador = [
             'nome' => $request->nome,
             'email' => $request->email,
-            'data_nascimento' => $request->data_nascimento,
+            'data_nascimento' => str_replace("/", "-", implode('/', array_reverse(explode('/', $request->data_nascimento)))),//str_replace("/", "-", $request->data_nascimento),
+            'telefone' => $request->telefone,
             'empresa_id' => $id
         ];
 
@@ -71,6 +72,7 @@ class ControllerColaborador extends Controller
         $colaborador->nome = $request->nome;
         $colaborador->email = $request->email;
         $colaborador->data_nascimento = $request->data_nascimento;
+        $colaborador->telefone = $request->telefone;
         $colaborador->empresa_id = $colaborador->empresa_id;
 
         $colaborador->save();

@@ -29,7 +29,7 @@
         echo "<tr>
                         <td>{$colaborador->nome}</td>
                         <td>{$colaborador->email}</td>
-                        <td>" . date('d/m/Y', strtotime($colaborador->data_nascimento)) . "</td>
+                        <td>{$colaborador->data_nascimento}</td>
                         <td>{$colaborador->empresa}</td>
                         <td>
                             <a class='btn btn-sm btn-primary' href={$linkEdit}>Editar/Abrir Colaborador</a>

@@ -2,15 +2,10 @@
 
 @section('content')
 
-    <h3>Empresa &raquo; <b><i>
+    <h3 class="my-lg-3"><b><?php echo $empresa->razao_social; ?></b></h3>
 
-                <?php echo $empresa->razao_social; ?>
-
-            </i></b>
-    </h3>
-    <hr>
-
-    <form action="{{url('/empresa/edit', ['id' => $empresa->id])}}" method="POST" autocomplete="off">
+    <form class="form-create form-edit" action="{{url('/empresa/edit', ['id' => $empresa->id])}}" method="POST"
+          autocomplete="off">
 
         <?= csrf_field(); ?>
         <?= method_field('PUT'); ?>
@@ -24,15 +19,29 @@
             </div>
 
             <div class="form-group col-md-6">
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite o email"
+                       class="form-control require" value="<?= $empresa->email;?>"/>
+            </div>
+
+            <div class="form-group col-md-6">
                 <label>CNPJ</label>
                 <input type="text" name="cnpj" id="cnpj" value="<?= $empresa->cnpj;?>"
                        class="form-control require"/>
             </div>
 
             <div class="form-group col-md-6">
-                <label>Telefone</label>
-                <input type="text" name="telefone" id="telefone" value="<?= $empresa->telefone;?>"
+                <label><b>Telefone <a href="" id="link-whatsApp" class="link-whats" target="_blank"> &raquo; (
+                            Abrir WhatsApp )</a>
+                    </b></label>
+                <input type="text" name="telefone" id="input-telefone" value="<?= $empresa->telefone;?>"
                        class="form-control require"/>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label><b>Buscar pelo CEP</b></label>
+                <input type="text" id="cep-buscar" placeholder="Digite o CEP"
+                       class="form-control"/>
             </div>
 
             <div class="form-group col-md-6">
@@ -43,7 +52,7 @@
 
         </div>
 
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-outline-primary btn-enviar">Enviar</button>
 
     </form>
 

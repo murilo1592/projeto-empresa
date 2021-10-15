@@ -1,0 +1,23 @@
+.form-create {
+    background: #1d68a7;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    border-radius: 3px;
+    -webkit-box-shadow: 4px 5px 8px -3px #000000;
+    box-shadow: 4px 5px 8px -3px #000000;
+}
+
+.btn-enviar {
+    color: white;
+    width: 100%;
+}
+
+.link-whats {
+    color: white;
+}
+
+.link-whats:hover {
+    color: white;
+}

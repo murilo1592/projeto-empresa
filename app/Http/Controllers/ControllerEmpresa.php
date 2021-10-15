@@ -18,14 +18,15 @@ class ControllerEmpresa extends Controller
     {
         $empresa = [
             'razao_social' => $request->razao_social,
-            'cnpj' => $request->cnpj,
+            'email' => $request->email,
+            'cnpj' => $this->removeChar($request->cnpj),
             'telefone' => $request->telefone,
             'endereco' => $request->endereco
         ];
 
         Empresa::create($empresa);
 
-        return redirect()->action('ControllerEmpresa@index');
+        die(json_encode(['error' => false]));
     }
 
     public function show($id)
@@ -50,12 +51,19 @@ class ControllerEmpresa extends Controller
         }
 
         $empresa->razao_social = $request->razao_social;
-        $empresa->cnpj = $request->cnpj;
+        $empresa->email = $request->email;
+        $empresa->cnpj = $this->removeChar($request->cnpj);
         $empresa->telefone = $request->telefone;
         $empresa->endereco = $request->endereco;
 
         $empresa->save();
 
         return redirect()->action('ControllerEmpresa@index');
+    }
+
+    private function removeChar($string)
+    {
+        $chars = ['.', '/', '-'];
+        return str_replace($chars, "", $string);
     }
 }

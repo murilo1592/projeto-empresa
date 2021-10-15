@@ -21,4 +21,6 @@ mix.styles([
 
     .scripts(['resources/views/empresas/js/script.js'], 'public/site/js/script.js')
 
+    .scripts(['resources/views/empresas/js/mask.js'], 'public/site/js/mask.js')
+
     .version();

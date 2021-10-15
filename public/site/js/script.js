@@ -1,36 +1,94 @@
 $(document).ready(function () {
 
-    $('#link-whatsApp-empresa').hide();
-    $('#link-whatsApp-colaborador').hide();
+    $('#link-whatsApp').hide();
+    $('#input-telefone').mask('(00) 0000-00000');
+    $('#cnpj').mask('00.000.000/0000-00');
+    $('#cep-buscar').mask('00000-000');
+    $('#data_nascimento').mask("00/00/0000", {placeholder: "__/__/____"});
 
-    $('#input-telefone-colaborador').blur(function () {
+    var telefone = $('#input-telefone').val()
 
-        var link_whatsApp = $('#input-telefone-colaborador').val();
+    if (telefone !== '') {
 
-        $('#link-whatsApp-colaborador').attr('href', `https://api.whatsapp.com/send?phone=${link_whatsApp}&text=Olá, gostaria de conversar.`).show();
+        carregarLinkWhatsApp(telefone)
+
+    } else {
+
+        $('#link-whatsApp').hide();
+    }
+
+    $('#input-telefone').blur(function () {
+
+        var telefone = $('#input-telefone').val()
+
+        if (telefone === '') {
+
+            $('#link-whatsApp').hide();
+
+        } else {
+
+            carregarLinkWhatsApp(telefone)
+        }
     });
 
-    $('#input-telefone-empresa').blur(function () {
-
-        var link_whatsApp = $('#input-telefone-empresa').val();
-
-        $('#link-whatsApp-empresa').attr('href', `https://api.whatsapp.com/send?phone=${link_whatsApp}&text=Olá, gostaria de conversar sobre nossa empresa.`).show();
-    });
-
-    $('#cep-buscar').blur(async function () {
+    $('#cep-buscar').change(async function () {
 
         var cep = $(this).val();
 
-        $('#endereco').val('Buscando...');
+        $('#endereco').val('Buscando...').attr('disabled', true);
+
         await buscarEndereco(cep)
     })
 
-    $('cnpj').blur(async function () {
+    /* ENVIO DO FORMULÁRIO EMPRESA */
 
-        var result = await isCNPJValid((this).val())
+    $(".form-empresa").submit(function (e) {
 
-        console.log(result)
-    })
+        e.preventDefault()
+
+        var campo = null;
+
+        $(".require").each(function () {
+
+            if ($.trim($(this).val()) === '') {
+
+                $(this).parent('div').addClass('erro-validacao');
+
+                $(this).addClass('erro-validacao');
+
+                campo = $(this).attr('placeholder')
+            }
+        });
+
+        if ($('.erro-validacao').length > 0 && campo !== null) {
+
+            alert(`${campo}`);
+
+            return;
+        }
+
+        const base_url = window.location.protocol + "//" + window.location.host
+
+        $.ajax({
+            url: base_url + '/empresas/nova',
+            method: "POST",
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            dataType: "Json",
+            processData: false,
+            success: function (data) {
+
+                if (data.error == false) {
+
+                    window.location.href = base_url + "/empresas"
+
+                } else {
+                    alert('Falha ao salvar dados da empresa');
+                }
+            }
+        });
+    });
 });
 
 async function buscarEndereco(cep) {
@@ -39,13 +97,15 @@ async function buscarEndereco(cep) {
 
         if (!("erro" in dados)) {
 
-            $('#endereco').val(`${dados.logradouro}, ${dados.bairro}, ${dados.localidade}, ${dados.uf}`);
+            $('#endereco').val(`${dados.logradouro}, ${dados.bairro}, ${dados.localidade} - ${dados.uf}`).attr('disabled', false);
 
-        } else {
-
-            $('#endereco').val('');
+            return;
         }
-    }, 'json');
+
+    }, 'json').catch(function () {
+
+        $('#endereco').val('').attr('disabled', false);
+    })
 }
 
 function isCNPJValid(cnpj) {
@@ -96,4 +156,9 @@ function isCNPJValid(cnpj) {
         return false;
 
     return true;
+}
+
+function carregarLinkWhatsApp(telefone) {
+
+    $('#link-whatsApp').attr('href', `https://api.whatsapp.com/send?phone=${telefone}&text=Olá, gostaria de conversar sobre nossa empresa.`).show();
 }
