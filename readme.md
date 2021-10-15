@@ -24,11 +24,11 @@ No terminal do projeto execute o comando "php artisan migrate" para criação au
 Execute no terminal o comando "composer install".
 Caso necessário, execute o comando "yarn install" e logo depois "npm run production" ( Instalação de plugins Jquery ) 
 
-##PASSO 3 [ START PROJETO ]
+## PASSO 3 [ START PROJETO ]
 
 No terminal execute o comando "php artisan serve" para iniciar o projeto.
 
-##LISTAR COLABORADORES POR EMPRESA E MÊS DE ANIVERSÁRIO [ API ]
+## LISTAR COLABORADORES POR EMPRESA E MÊS DE ANIVERSÁRIO [ API ]
 
 Execute um GET passando como parâmetro na url o ID da empresa e mês de aniversário.3
 
