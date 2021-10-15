@@ -19,7 +19,7 @@ Configure o arquivo .env para conexão com o banco de dados.
 
 No terminal do projeto execute o comando "php artisan migrate" para criação automática das tabelas.
 
-## PASSO 2 [ INTALAR DEPENDENCIAS ]
+## PASSO 2 [ INTALAR DEPENDÊNCIAS ]
 
 Execute no terminal o comando "composer install".
 Caso necessário, execute o comando "yarn install" e logo depois "npm run production" ( Instalação de plugins Jquery ) 
