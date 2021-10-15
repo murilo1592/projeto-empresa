@@ -17,4 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/colaboradores/{empresa_id}/{mes}', 'API\ControllerColaboradores@index');
+Route::get('/colaboradores/', 'API\ControllerColaboradores@index');

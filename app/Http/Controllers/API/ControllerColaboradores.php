@@ -11,16 +11,21 @@ use LaraTest\Http\Controllers\Controller;
 
 class ControllerColaboradores extends Controller
 {
-    public function index($empresa, $mes)
+    public function index(Request $request)
     {
+        if (empty($request->empresa) || $request->mes) {
+
+            die();
+        }
+
         $sql = "SELECT cp.nome, cp.telefone, cp.data_nascimento
                 FROM colaboradores cp
                 WHERE cp.empresa_id = ?
                     and EXTRACT(month from cp.data_nascimento) = ?
                 ORDER BY cp.data_nascimento DESC";
 
-        $result = DB::select($sql, [$empresa, $mes]);
+        $result = DB::select($sql, [$request->empresa, $request->mes]);
 
-        return empty($result) ? NULL : $result;
+        return empty($result) ? NULL : json_encode($result);
     }
 }
