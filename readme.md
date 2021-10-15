@@ -9,49 +9,29 @@
 
 ## PROJETO TESTE LARAVEL EMPRESA
 
-Siga as instruções abaixo para rodar o projeto. 
+Siga as instruções abaixo para iniciar o projeto. Sistema desenvolvido para cadastro e atualização de empresas e seus respectivos colaboradores.
 
 ## PASSO 1 [ Parametrizar Banco de Dados ]
 
-Crie uma base de dados PostgreSQL chamada "lara_test" com um schema "public".
+Crie uma base de dados PostgreSQL chamada "lara_test" com schema "public".
 
 Configure o arquivo .env para conexão com o banco de dados.
 
-No terminal do projeto, rode o comando "php artisan migrate"
+No terminal do projeto execute o comando "php artisan migrate" para criação automática das tabelas.
 
-## Laravel Sponsors
+## PASSO 2 [ INTALAR DEPENDENCIAS ]
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+Execute no terminal o comando "composer install".
+Caso necessário, execute o comando "yarn install" e logo depois "npm run production" ( Instalação de plugins Jquery ) 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+##PASSO 3 [ START PROJETO ]
 
-## Contributing
+No terminal execute o comando "php artisan serve" para iniciar o projeto.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+##LISTAR COLABORADORES POR EMPRESA E MÊS DE ANIVERSÁRIO [ API ]
 
-## Security Vulnerabilities
+Execute um GET passando como parâmetro na url o ID da empresa e mês de aniversário.3
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Exemplo:
+curl --request GET \
+     --url http://127.0.0.1:8000/api/colaboradores/1/7
