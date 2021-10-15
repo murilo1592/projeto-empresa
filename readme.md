@@ -34,4 +34,4 @@ Execute um GET passando como parâmetro na url o ID da empresa e mês de anivers
 
 Exemplo:
 curl --request GET \
-     --url http://127.0.0.1:8000/api/colaboradores/1/7
+     --url http://127.0.0.1:8000/api/colaboradores?empresa=1&mes=7
