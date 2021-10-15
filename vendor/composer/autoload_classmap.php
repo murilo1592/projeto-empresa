@@ -1509,6 +1509,7 @@ return array(
     'LaraTest\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'LaraTest\\Empresa' => $baseDir . '/app/Empresa.php',
     'LaraTest\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'LaraTest\\Http\\Controllers\\API\\ControllerColaboradores' => $baseDir . '/app/Http/Controllers/API/ControllerColaboradores.php',
     'LaraTest\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'LaraTest\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'LaraTest\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',

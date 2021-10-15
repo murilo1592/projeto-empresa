@@ -3,34 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8478f2b1-e682-4f41-8752-0743e164712e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Colaborador.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Colaborador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Empresa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Empresa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerColaborador.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerColaborador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControllerEmpresa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControllerEmpresa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_13_233839_create_table_empresas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_14_061744_create_table_colaboradores.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/site/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/colaboradores/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colaboradores/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/colaboradores/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colaboradores/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/colaboradores/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/colaboradores/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/empresas/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/empresas/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/empresas/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/empresas/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/empresas/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/empresas/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/empresas/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/105cf80cc01eba2ecbd4813b553273ca158d6ee6.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/105cf80cc01eba2ecbd4813b553273ca158d6ee6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/195e4846232ee49db8baecf94f52bbf6e5c62b65.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/195e4846232ee49db8baecf94f52bbf6e5c62b65.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/456dca3131655b97b031bfa653be04f96243192b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/456dca3131655b97b031bfa653be04f96243192b.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/aa5986f31f206b97b8191fa1403517be6b106a17.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/aa5986f31f206b97b8191fa1403517be6b106a17.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/d384cf75b3bdbc7d9d2272bd47fb2a8c8e4862f7.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/d384cf75b3bdbc7d9d2272bd47fb2a8c8e4862f7.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/f44bd43429f145673bb172f8d5cc4ad20ce5cacd.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f44bd43429f145673bb172f8d5cc4ad20ce5cacd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/fa3fa39033cb8eb8d7e8f1218bb443ba707b5b55.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/fa3fa39033cb8eb8d7e8f1218bb443ba707b5b55.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_14_230738_create_table_colaboradores.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +153,7 @@
       <updated>1634168075630</updated>
       <workItem from="1634168078106" duration="15103000" />
       <workItem from="1634202693277" duration="4026000" />
-      <workItem from="1634249183873" duration="20017000" />
+      <workItem from="1634249183873" duration="20800000" />
     </task>
     <servers />
   </component>

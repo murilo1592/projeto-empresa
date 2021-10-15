@@ -1898,6 +1898,7 @@ class ComposerStaticInit7c2ad33786f6e8b8b52536533cc919ce
         'LaraTest\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'LaraTest\\Empresa' => __DIR__ . '/../..' . '/app/Empresa.php',
         'LaraTest\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'LaraTest\\Http\\Controllers\\API\\ControllerColaboradores' => __DIR__ . '/../..' . '/app/Http/Controllers/API/ControllerColaboradores.php',
         'LaraTest\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'LaraTest\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'LaraTest\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
