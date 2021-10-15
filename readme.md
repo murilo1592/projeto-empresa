@@ -28,7 +28,7 @@ Caso necessário, execute o comando "yarn install" e logo depois "npm run produc
 
 No terminal execute o comando "php artisan serve" para iniciar o projeto.
 
-## LISTAR COLABORADORES POR EMPRESA E MÊS DE ANIVERSÁRIO [ API ]
+## LISTAR COLABORADORES [ API ]
 
 Execute um GET passando como parâmetro na url o ID da empresa e mês de aniversário.
 
